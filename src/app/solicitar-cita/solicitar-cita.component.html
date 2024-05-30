@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitar Cita</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    form {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 5px;
+        display: block;
+    }
+    input, select {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+<h1>Solicitar Cita</h1>
+<form id="formulario-cita">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+  <label for="identidad">Número de Identidad:</label>
+  <input type="text" id="identidad" name="identidad" placeholder="Ingrese su número de identidad" required>
+
+  <label for="email">Correo Electrónico:</label>
+  <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input type="text" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
+
+  <label for="fecha">Fecha y Hora:</label>
+  <input type="datetime-local" id="fecha" name="fecha" required>
+
+  <label for="sede">Sede de Servicio:</label>
+  <select id="sede" name="sede">
+    <option value="centro">Centro</option>
+    <option value="norte">Norte</option>
+    <option value="sur">Sur</option>
+    <option value="aeropuerto">Aeropuerto</option>
+  </select>
+
+  <label for="tipoServicio">Tipo de Servicio:</label>
+  <select id="tipoServicio" name="tipoServicio">
+    <option value="caja">Caja</option>
+    <option value="asesoria">Asesoría</option>
+    <option value="nuevosProductos">Nuevos Productos</option>
+  </select>
+
+  <button type="submit">Enviar Solicitud</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  // JavaScript para enviar datos del formulario
+  // Aquí puedes agregar el código JavaScript necesario para enviar los datos del formulario al backend
+</script>
+</body>
+</html>
